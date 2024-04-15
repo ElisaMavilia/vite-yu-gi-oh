@@ -1,5 +1,6 @@
 <template>
     <header class="px-4 py-4">
+        <img src="../assets/img/pngaaa.com-426286.png" alt="Logo">
         Yu-Gi-Oh Api
     </header>
 </template>
@@ -19,5 +20,9 @@ header{
     border: 1px solid red;
     font-weight: 500;
     font-size: 2.5em;
+
+img {
+    width: 15%;
+}    
 }
 </style>
