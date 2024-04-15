@@ -1,6 +1,7 @@
 <template>
     <main>
         <div class="my-5" id="white-container">
+
             white container
         </div>
     </main>
@@ -8,7 +9,10 @@
 
 <script>
     export default {
-        name: 'MainComponent'
+        name: 'MainComponent',
+        components: {
+            
+        }
     }
 </script>
 
