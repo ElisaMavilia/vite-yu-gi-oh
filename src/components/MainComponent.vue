@@ -1,7 +1,9 @@
 <template>
-    <div>
-
-    </div>
+    <main>
+        <div class="my-5" id="white-container">
+            white container
+        </div>
+    </main>
 </template>
 
 <script>
@@ -10,6 +12,17 @@
     }
 </script>
 
-<style lang="scss" scoped>
 
+<style lang="scss" scoped>
+@use '../assets/styles/partials/variables' as *;
+
+main{
+    width: 100%;
+
+#white-container{
+    max-width: 1500PX;
+    margin: 0 auto;
+    background-color: $whiteheader;
+}
+}
 </style>
