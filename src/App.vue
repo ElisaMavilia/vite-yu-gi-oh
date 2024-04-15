@@ -1,13 +1,27 @@
 <template>
-  <h1 class="text-center">
-    ciao!
-  </h1>
+ <HeaderComponent />
 </template>
 
 <script>
+import { store } from './data/store.js';
+import axios from 'axios';
+import HeaderComponent from './components/HeaderComponent.vue';
   export default {
-    name: 'App'
+    name: 'App',
+    components: {
+      HeaderComponent
+    },
+    data(){
+      return{
+        store
+      }
+     
+    },
+    created(){
+     
+    } 
   }
+  
 </script>
 
 <style lang="scss" scoped>
