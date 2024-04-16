@@ -1,6 +1,6 @@
 <template>
     <main>
-        <div class="my-5  d-flex justify-content-between align-content-center align-items-center flex-wrap" id="white-container">
+        <div class="mt-5 py-5 px-5 d-flex justify-content-between align-content-center align-items-center flex-wrap" id="white-container">
         <CardComponent />
         </div>
     </main>
