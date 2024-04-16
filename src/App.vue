@@ -8,15 +8,11 @@ import { store } from './data/store.js';
 import axios from 'axios';
 import HeaderComponent from './components/HeaderComponent.vue';
 import MainComponent from './components/MainComponent.vue';
-import CardComponent from './components/CardComponent.vue';
-import SingleCard from './components/SingleCard.vue';
   export default {
     name: 'App',
     components: {
       HeaderComponent,
-      MainComponent,
-      CardComponent,
-      SingleCard
+      MainComponent
     },
     data(){
       return{
