@@ -10,12 +10,11 @@ export const store = reactive ({
         params: {
             num: 20,
             offset: 0,
-            //archetype
+           
         }
     },
-    archetypeFilter:'',
+    archetypeFilter:"",
     cardElements: [],
     archetypeList: [],
-    total: 0,
-    archetypeList:[]
+    total: 0
 })

@@ -2,7 +2,7 @@
     <header class="px-4 py-4">
         <img src="../assets/img/pngaaa.com-426286.png" alt="Logo">
         Yu-Gi-Oh Api
-        <select class="form-select mt-4" @change="$emit ('archetypeSearch')">
+        <select class="form-select mt-4" @change="$emit ('archetypeSearch')" v-model="store.archetypeFilter">
             <option value="">All</option>
             <option :value="archetype" v-for="archetype in store.archetypeList">{{ archetype.archetype_name }}</option>
         </select>
@@ -33,6 +33,10 @@ header{
 
 img {
     width: 15%;
-}    
+}
+
+select{
+    width: 20%;
+}
 }
 </style>
