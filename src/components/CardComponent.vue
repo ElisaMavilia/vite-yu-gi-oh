@@ -1,10 +1,9 @@
 <template>
     
-    <div id="card-boxes" class="container d-flex justify-content-between">
-         <div id="single-card" v-for="cardElements in store.cardElements" :key="cardElements.id">
+         <div id="card-boxes" v-for="cardElements in store.cardElements" :key="cardElements.id">
         <SingleCard :id="cardElements.id" :title="cardElements.name" :image="cardElements.card_images[0].image_url_small" :typology="cardElements.archetype" />
         </div> 
-    </div>
+    
 
    
 </template>
@@ -27,11 +26,5 @@ import SingleCard from './SingleCard.vue';
 </script>
 
 <style lang="scss" scoped>
-
-#card-boxes{
-    width: 100%;
-}
-
-
 
 </style>

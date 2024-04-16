@@ -1,8 +1,6 @@
 <template>
  <HeaderComponent />
  <MainComponent />
- <CardComponent />
- <SingleCard />
 </template>
 
 <script>
