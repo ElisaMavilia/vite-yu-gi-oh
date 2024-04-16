@@ -2,6 +2,10 @@
     <header class="px-4 py-4">
         <img src="../assets/img/pngaaa.com-426286.png" alt="Logo">
         Yu-Gi-Oh Api
+        <select class="form-select mt-4" @change="$emit ('archetypeSearch')">
+            <option value="">All</option>
+            <option value="archetype">Archetype</option>
+        </select>
     </header>
 </template>
 

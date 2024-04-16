@@ -31,7 +31,8 @@ import MainComponent from './components/MainComponent.vue';
     },
     created(){
       this.getCards();
-    }
+    },
+    
   }
   
 </script>
