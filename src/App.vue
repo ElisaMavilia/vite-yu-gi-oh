@@ -27,9 +27,10 @@ import SingleCard from './components/SingleCard.vue';
     },
     methods: {
       getCards(){
-        axios.get(this.store.apiUrl).then((res)=>{
+        axios.get(this.store.apiUrl + this.store.endPoint.title, this.store.options).then((res)=>{
           this.store.cardElements = res.data.data; 
           console.log(this.store.cardElements);
+          this.store.total = res.data.meta.total_rows;
         });
       }
       
@@ -37,10 +38,6 @@ import SingleCard from './components/SingleCard.vue';
     created(){
       this.getCards();
     }
-   
-      
-  
-    
   }
   
 </script>

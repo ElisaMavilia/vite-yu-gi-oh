@@ -1,11 +1,18 @@
 import {reactive} from 'vue';
 
 export const store = reactive ({
-    apiUrl: 'https://db.ygoprodeck.com/api/v7/cardinfo.php?num=20&offset=0',
+    apiUrl: 'https://db.ygoprodeck.com/api/v7/',
     endPoint: {
-        "title": "name",
-        "image": "https://images.ygoprodeck.com/images/cards_small/34541863.jpg",
-        "typology": "archetype"
+        title: "cardinfo.php",
+        archetype: 'archetypes.php'
+    },
+    options:{ //serve per restringere il campo
+        params: {
+            num: 20,
+            offset: 0
+        }
     },
     cardElements: [],
+    total: 0,
+    archetypeList:[]
 })

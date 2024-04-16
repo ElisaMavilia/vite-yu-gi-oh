@@ -1,17 +1,21 @@
 <template>
     <main>
         <div class="my-5" id="white-container">
-
-            white container
+       
+        <SingleCard />
         </div>
     </main>
 </template>
 
 <script>
+
+import SingleCard from './SingleCard.vue';
+
     export default {
         name: 'MainComponent',
         components: {
-            
+           
+            SingleCard
         }
     }
 </script>

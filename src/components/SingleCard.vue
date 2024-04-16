@@ -1,6 +1,8 @@
 <template>
-    <div>
-
+    <div id="single-card" class="">
+        <img :src="image" :alt="title">
+        <h5>{{ title }}</h5>
+        <p>{{ typology }}</p>
     </div>
 </template>
 
@@ -12,5 +14,9 @@
 </script>
 
 <style lang="scss" scoped>
+
+#single-card{
+    width: calc(100% / 5);
+}
 
 </style>
