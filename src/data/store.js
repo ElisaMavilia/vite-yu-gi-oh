@@ -9,10 +9,13 @@ export const store = reactive ({
     options:{ //serve per restringere il campo
         params: {
             num: 20,
-            offset: 0
+            offset: 0,
+            //archetype
         }
     },
+    archetypeFilter:'',
     cardElements: [],
+    archetypeList: [],
     total: 0,
     archetypeList:[]
 })
