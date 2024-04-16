@@ -1,5 +1,5 @@
 <template>
- <HeaderComponent />
+ <HeaderComponent  @archetypeSearch="getArchetype" />
  <MainComponent />
 </template>
 
@@ -29,8 +29,8 @@ import MainComponent from './components/MainComponent.vue';
       },
       getArchetype(){
         axios.get(this.store.apiUrl + this.store.endPoint.archetype).then((res)=>{
-          this.store.archetypeList = res.data.slice; 
-         /*  console.log(this.store.archetypeList); */
+          this.store.archetypeList = res.data.slice(0, 10); 
+         console.log(this.store.archetypeList); 
         });
       },
       

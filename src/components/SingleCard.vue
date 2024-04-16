@@ -16,10 +16,18 @@
 <style lang="scss" scoped>
 
 #single-card{
-    width: calc(100% / 5);
+ /*  width: calc(100% / 5); */
+    margin-top: 5px;
+ 
 
+
+img{
+    width: 250px;
+    height: auto;
+}  
 h6 {
-    font-size: 1em;
+    font-size: 0.9em;
+    padding-top: 5px;
 }
 
 p{

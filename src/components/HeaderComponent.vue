@@ -4,15 +4,22 @@
         Yu-Gi-Oh Api
         <select class="form-select mt-4" @change="$emit ('archetypeSearch')">
             <option value="">All</option>
-            <option value="archetype">Archetype</option>
+            <option :value="archetype" v-for="archetype in store.archetypeList">{{ archetype.archetype_name }}</option>
         </select>
     </header>
 </template>
 
 <script>
+    import { store } from '../data/store.js';
     export default {
-        name: 'HeaderComponent'
+        name: 'HeaderComponent',
+    data(){
+      return{
+        store
+      }
+    },
     }
+   
 </script>
 
 <style lang="scss" scoped>
